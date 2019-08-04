@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.6/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.7.6/dist/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="favicon16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon96.png" sizes="96x96">
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Create your own symmetric mandalas for coloring">
+    <meta name="keywords" content="mandala,coloring,mandala generator,mandala draw,mandala coloring,own mandala">
+    <meta name="author" content="NyxCode">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <title>Mandala Generator</title>
+</head>
+<body>
+
+<div id="site-wrapper">
+    <div class="ui raised segment controls">
+        <div class="ui top attached label">Settings</div>
+
+        <div style="text-align: center">
+            <div class="ui pointing below basic label shrink-label">Symmetries</div>
+        </div>
+        <div class="ui olive large slider compact-slider" id="symmetries-slider"></div>
+
+        <div id="control-buttons" style="text-align: center">
+            <div class="ui icon buttons">
+
+                <button class="ui button" id="pen-button">
+                    <i class="pen icon"></i>
+                </button>
+                <button class="ui button" id="line-button">
+                    <i class="slash icon"></i>
+                </button>
+                <button class="ui button" id="eraser-button">
+                    <i class="eraser icon"></i>
+                </button>
+            </div>
+            <div class="ui icon buttons">
+                <button class="olive ui button" id="download-button">
+                    <i class="download icon"></i>
+                </button>
+                <button class="negative ui button" id="delete-button">
+                    <i class="trash icon"></i>
+                </button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div id="output">
+        <canvas class="canvas" id="background-canvas"></canvas>
+        <canvas class="canvas" id="foreground-canvas"></canvas>
+    </div>
+</div>
+
+<script type="module" src="index.js"></script>
+</body>
+</html>
